@@ -1,4 +1,4 @@
-require_relative '../lib/ejercicio1.rb'
+require_relative '../../lib/ejercicio1.rb'
 
 describe Ejercicio1 do
   subject { Ejercicio1.words(*palabras) }
