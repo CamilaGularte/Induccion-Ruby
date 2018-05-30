@@ -1,9 +1,9 @@
-module Ejercicio1
-  def self.words(*palabras)
-    mas_grande = palabras.first
-    palabras.each do |palabra|
-      palabra.length > mas_grande.length ? mas_grande = palabra : mas_grande
+module Exercise1
+  def self.words(*words1)
+    biggest = words1.first
+    words1.each do |word|
+      word.length > biggest.length ? biggest = word : biggest
     end
-    mas_grande
+    biggest
   end
 end
