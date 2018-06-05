@@ -1,10 +1,6 @@
 module Exercise3
   def self.include?(array, object)
-    array.each do |element|
-      if element == object
-        return true
-      end
-    end
+    array.each { |element| return true if element == object }
     false
   end
 end
