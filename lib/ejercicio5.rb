@@ -1,12 +1,8 @@
 module Exercise5
-  def self.swapcase(n)
+  def self.swapcase(string)
     new_string = ''
-    n.each_char do |i|
-      if i == i.downcase
-        new_string += i.upcase
-      else
-        new_string += i.downcase
-      end
+    string.each_char do |i|
+      i == i.downcase ? new_string += i.upcase : new_string += i.downcase
     end
     new_string
   end
